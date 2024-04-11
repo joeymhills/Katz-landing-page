@@ -694,22 +694,13 @@ video {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
-.bg-slate-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/assets\/art\/hero\.jpg\'\)-20\] {
-  background-image: url('../assets/art/hero.jpg')-20;
-}
-
-.bg-\[url\(\'\.\.\/assets\/art\/hero\.jpg\'\)\] {
-  background-image: url('../assets/art/hero.jpg');
+.bg-\[url\(\'\/assets\/art\/hero\.jpg\'\)\] {
+  background-image: url('/assets/art/hero.jpg');
 }
 
 .bg-auto {
