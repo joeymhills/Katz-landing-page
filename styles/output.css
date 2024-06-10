@@ -763,6 +763,10 @@ video {
   height: 610px;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .min-h-\[1150px\] {
   min-height: 1150px;
 }
@@ -927,6 +931,10 @@ video {
   width: 100%;
 }
 
+.w-\[430px\] {
+  width: 430px;
+}
+
 .max-w-\[600px\] {
   max-width: 600px;
 }
@@ -1033,6 +1041,10 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1092,6 +1104,16 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#585858\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 88 88 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#232424\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 36 36 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\.\/assets\/art\/arrows\.png\'\)\] {
   background-image: url('../assets/art/arrows.png');
 }
@@ -1100,8 +1122,24 @@ video {
   background-image: url('../assets/art/nodes.png');
 }
 
+.bg-\[url\(\'\.\.\/assets\/art\/sunset\.png\'\)\] {
+  background-image: url('../assets/art/sunset.png');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-0 {
@@ -1118,6 +1156,14 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-4 {
@@ -1153,6 +1199,26 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pb-10 {
@@ -1287,6 +1353,10 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[23px\] {
+  font-size: 23px;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -1300,6 +1370,10 @@ video {
 }
 
 .font-semibold {
+  font-weight: 600;
+}
+
+.font-\[600\] {
   font-weight: 600;
 }
 
