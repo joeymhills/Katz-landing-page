@@ -116,7 +116,7 @@
 
     <!--Patient Testimonials section -->
     <section class="bg-[#F2F4F7] flex flex-col justify-center items-center">
-            <div class="w-[1000px] text-center text-black pt-32 pb-16">
+            <div class="w-[1000px] text-center text-black pt-16 pb-16">
                 <h1 class="text-[87px] font-polarisCondensed font-bold py-5">Patient Testimonials</h1>
                 <p class="text-[15px] w-[963px] font-polaris font-medium">Storytelling is an essential component of patient experience. It not only allows us to hear the “voice” of our patients and families through video testimonials, written and e-mailed letters, and social media posts, but allows us to connect with and inspire others. These stories kickstart all meetings, educational sessions, and presentations, allowing for a moment of grounding and gratitude, and often reminding us of our “why.” This year presented incredible patient stories, highlighting care from several areas across the organization, including the Katz Institute for Women’s Health, Cohen Children’s Medical Center, Huntington Hospital, the cancer service line, maternal health, vascular surgery, financial services, and the volunteer experience.
                 </p>
@@ -126,9 +126,6 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <a href="https://www.youtube.com/watch?v=Gz9_hp-WIBE" class="swiper-slide">
-                <img src="assets/art/cropped/Alban.png" alt="Image 1" class="shadow-xl rounded-lg h-[388px] w-[400px]">
-            </a>
             <a href="https://www.youtube.com/watch?v=bhv8oGeDcPQ" class="swiper-slide">
                 <img src="assets/art/cropped/Amelda.png" alt="Image 2" class="shadow-xl rounded-lg h-[388px] w-[400px]">
             </a>
@@ -152,6 +149,9 @@
             </a>
             <a href="https://youtu.be/2rVezW-TD14?si=0M4n540oDz33lBO3" class="swiper-slide">
               <img src="assets/art/cropped/Faith.png" alt="Image 9" class="shadow-xl rounded-lg h-[388px] w-[400px] rounded-lg">
+            </a>
+            <a href="https://www.youtube.com/watch?v=Gz9_hp-WIBE" class="swiper-slide">
+              <img src="assets/art/cropped/Alban.png" alt="Image 1" class="shadow-xl rounded-lg h-[388px] w-[400px]">
             </a>
           </div>
           <!-- If we need navigation buttons -->
@@ -466,15 +466,12 @@
             slidesPerView: 3,
             centeredSlides: true,
             spaceBetween: 75,
+            speed: 700,
             loop: true,
             crossFade: true,
             autoplay: {
               delay: 5000,
               disableOnInteraction: true,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
             },
         });
 
