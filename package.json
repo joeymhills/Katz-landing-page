@@ -10,7 +10,7 @@
     "webpack-cli": "^5.1.4"
   },
   "scripts": {
-    "dev": "concurrently \"http-server docs -p 8888\" \"npx tailwindcss -i ./styles/tailwind.css -o ./styles/output.css --watch\""
+    "dev": "npx tailwindcss -i ./docs/styles/tailwind.css -o ./docs/styles/output.css --watch"
   },
   "name": "opce-report",
   "description": "",
