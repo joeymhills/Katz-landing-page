@@ -711,6 +711,14 @@ video {
   margin-top: 2rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -801,6 +809,14 @@ video {
 
 .h-32 {
   height: 8rem;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[300px\] {
+  height: 300px;
 }
 
 .min-h-\[1150px\] {
@@ -999,6 +1015,18 @@ video {
   max-width: 500px;
 }
 
+.max-w-\[625px\] {
+  max-width: 625px;
+}
+
+.max-w-\[780px\] {
+  max-width: 780px;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
 .flex-shrink-0 {
   flex-shrink: 0;
 }
@@ -1025,6 +1053,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -1194,6 +1226,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .py-10 {
@@ -1401,6 +1437,15 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[30px\] {
+  font-size: 30px;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -1451,6 +1496,10 @@ video {
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.leading-\[40px\] {
+  line-height: 40px;
 }
 
 .text-\[\#0059A5\] {
@@ -1561,6 +1610,16 @@ video {
   cursor: pointer;
 }
 
+@media (min-width: 640px) {
+  .sm\:w-\[412px\] {
+    width: 412px;
+  }
+
+  .sm\:w-\[430px\] {
+    width: 430px;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
@@ -1574,12 +1633,224 @@ video {
     display: none;
   }
 
+  .md\:h-\[388px\] {
+    height: 388px;
+  }
+
+  .md\:h-\[486px\] {
+    height: 486px;
+  }
+
+  .md\:h-\[586px\] {
+    height: 586px;
+  }
+
+  .md\:h-\[587px\] {
+    height: 587px;
+  }
+
+  .md\:h-\[590px\] {
+    height: 590px;
+  }
+
+  .md\:h-\[610px\] {
+    height: 610px;
+  }
+
+  .md\:h-\[672px\] {
+    height: 672px;
+  }
+
+  .md\:w-80 {
+    width: 20rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:w-\[1000px\] {
+    width: 1000px;
+  }
+
+  .md\:w-\[1200px\] {
+    width: 1200px;
+  }
+
+  .md\:w-\[1300px\] {
+    width: 1300px;
+  }
+
+  .md\:w-\[1340px\] {
+    width: 1340px;
+  }
+
+  .md\:w-\[202px\] {
+    width: 202px;
+  }
+
+  .md\:w-\[240px\] {
+    width: 240px;
+  }
+
+  .md\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .md\:w-\[266px\] {
+    width: 266px;
+  }
+
+  .md\:w-\[280px\] {
+    width: 280px;
+  }
+
+  .md\:w-\[290px\] {
+    width: 290px;
+  }
+
+  .md\:w-\[330px\] {
+    width: 330px;
+  }
+
+  .md\:w-\[380px\] {
+    width: 380px;
+  }
+
+  .md\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .md\:w-\[416px\] {
+    width: 416px;
+  }
+
+  .md\:w-\[425px\] {
+    width: 425px;
+  }
+
+  .md\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .md\:w-\[545px\] {
+    width: 545px;
+  }
+
+  .md\:w-\[553px\] {
+    width: 553px;
+  }
+
+  .md\:w-\[580px\] {
+    width: 580px;
+  }
+
+  .md\:w-\[590px\] {
+    width: 590px;
+  }
+
+  .md\:w-\[600px\] {
+    width: 600px;
+  }
+
+  .md\:w-\[650px\] {
+    width: 650px;
+  }
+
+  .md\:w-\[700px\] {
+    width: 700px;
+  }
+
+  .md\:w-\[734px\] {
+    width: 734px;
+  }
+
+  .md\:w-\[781px\] {
+    width: 781px;
+  }
+
+  .md\:w-\[800px\] {
+    width: 800px;
+  }
+
+  .md\:w-\[849px\] {
+    width: 849px;
+  }
+
+  .md\:w-\[850px\] {
+    width: 850px;
+  }
+
+  .md\:w-\[855px\] {
+    width: 855px;
+  }
+
+  .md\:w-\[861px\] {
+    width: 861px;
+  }
+
+  .md\:w-\[882px\] {
+    width: 882px;
+  }
+
+  .md\:w-\[883px\] {
+    width: 883px;
+  }
+
+  .md\:w-\[894px\] {
+    width: 894px;
+  }
+
+  .md\:w-\[900px\] {
+    width: 900px;
+  }
+
+  .md\:w-\[963px\] {
+    width: 963px;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:gap-24 {
+    gap: 6rem;
   }
 
   .md\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:text-\[18px\] {
+    font-size: 18px;
+  }
+
+  .md\:text-\[33px\] {
+    font-size: 33px;
+  }
+
+  .md\:text-\[35px\] {
+    font-size: 35px;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
+  }
+
+  .md\:text-\[47px\] {
+    font-size: 47px;
+  }
+
+  .md\:text-\[80px\] {
+    font-size: 80px;
+  }
+
+  .md\:text-\[87px\] {
+    font-size: 87px;
+  }
+
+  .md\:leading-\[55px\] {
+    line-height: 55px;
   }
 }
