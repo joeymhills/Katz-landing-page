@@ -13,10 +13,13 @@
     <link rel="icon" type="image/x-icon" href="favicon.jpg">
 
     <style>
-        .swiper {
-            width: 1300px;
-            padding: 20px 0;
-        }
+      .swiper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
         .swiper-button-next, .swiper-button-prev {
             color: black;
             size: 125%;
@@ -26,158 +29,161 @@
           overflow: hidden;
           width: 100%;
           height: 100%;
-        }
-        
-        .bg-video video {
+      }
+      
+      .bg-video video {
           position: absolute;
           top: 0;
           left: 0;
           width: 100%;
           height: 100%;
           object-fit: cover; /* Ensure the video covers the entire div */
-        }
-        
-        /* Adjust the z-index of the content to overlay on top of the video */
-        .content-overlay {
+      }
+      
+      /* Adjust the z-index of the content to overlay on top of the video */
+      .content-overlay {
           position: relative;
           z-index: 1;
-        }
-        
+      }
+      
     </style>
 
 </head>
 
 <!-- Wrapper for whole project -->
 <body class="bg-white m-0 p-0">
-    <!-- Intro section -->
-    <section class="bg-white block relative">
-        <div class="w-full absolute h-12 bg-blue-700 z-50"></div>
-        <img src="assets/intro-section-logo.png" class="absolute z-40 max-w-[500px]"/>
+  <!-- Intro section -->
+  <section class="bg-white block relative">
+      <div class="w-full absolute h-[50px] bg-blue-700 z-50"></div>
+      <img src="assets/intro-section-logo.png" class="absolute invisible lg:visible z-40 max-w-[300px] md:max-w-[350px] lg:max-w-[430px]" />
+      <img src="assets/art/whitelogo.png" class="absolute lg:invisible top-2 left-8 max-w-[70px] z-50" />
 
-        <!-- Top half of intro section -->
-        <div id="video-container" class="relative">
-            <div class="absolute top-0 w-full flex flex-col items-center justify-center z-50 ">
-              <h2 class="text-white font-polaris pt-16 text-[22px]"> 2023 ANNUAL REPORT</h2>
-              <h1 class="text-center pt-8 text-[80px] leading-none text-white w-[780px] font-polarisCondensed font-bold">CREATING LOYALTY THROUGH EXPERIENCE</h1>
-              <h2 class="text-white font-polaris pt-5 text-[28px]">Patient and Customer Experience</h2>
-                <div class="w-[625px] pt-5">
-                  <p class="text-white text-center font-bold text-[18px] font-polarisCondensed">This annual report was created with the environment in mind! In an effort to promote sustainability, the Office of Patient Experience chose to create Northwell’s first Digital Annual Report. By doing so, we saved hundreds of trees, eliminated the use of plastic, and reduced our carbon footprint. Enjoy!</p>
-                </div>
-            </div>
-        </div>
 
-        
-        <!-- Bottom half of intro section -->
-        <div class="min-h-[920px]">
-            <!-- Cards container with negative margin -->
-            <div class="flex -mt-44 pb-28 flex-row justify-center gap-12 relative">
-                <!-- Card 1 -->
-                <div class="flex flex-col text-center items-center bg-white rounded-lg shadow-2xl w-[412px] min-h-[920px] z-50">
-                    <img src="assets/art/michael.png" class="p-6 w-[359px] h-[359px]"/>
-                    <div class="flex flex-col text-center justify-start items-center">
-                    <h1 class="w-[280px] font-polarisCondensed font-bold text-[33px]">MICHAEL J. DOWLING</h1>
-                    <h2 class="w-[240px] text-[#727272] font-polaris font-medium pt-6 pb-10">President and chief executive officer, Northwell Health</h2>
-                    <p class="w-[290px] font-polaris font-medium text-[20px] pb-10">“Optimism is ingrained in the culture of Northwell. What differentiates us is how we embrace positivity, hope, and progression – and it’s what we do best. We see each day as a new opportunity to have a positive impact on our community and relish in passing that prospect to others.”</p>
-                    </div>
-                </div>
+      <!-- Top half of intro section -->
+      <div id="video-container" class="relative">
+          <div class="absolute top-0 w-full flex flex-col items-center justify-center z-50 p-4 md:p-8">
+              <h2 class="text-white font-polaris pt-12 md:pt-12 text-[16px] md:text-[16px]">2023 ANNUAL REPORT</h2>
+              <h1 class="text-center pt-4 md:pt-4 text-[40px] md:text-[60px] lg:text-[80px] leading-none text-white w-full max-w-[780px] font-polarisCondensed font-bold">CREATING LOYALTY THROUGH EXPERIENCE</h1>
+              <h2 class="text-white font-polaris pt-2 md:pt-5 text-[20px] md:text-[28px]">Patient and Customer Experience</h2>
+              <div class="w-full max-w-[625px] pt-2 md:pt-5">
+                  <p class="text-white text-center font-bold text-[14px] md:text-[18px] font-polarisCondensed">This annual report was created with the environment in mind! In an effort to promote sustainability, the Office of Patient Experience chose to create Northwell’s first Digital Annual Report. By doing so, we saved hundreds of trees, eliminated the use of plastic, and reduced our carbon footprint. Enjoy!</p>
+              </div>
+          </div>
+      </div>
 
-                <!-- Card 2 -->
-                <div class="flex flex-col text-center items-center bg-white rounded-lg shadow-2xl w-[412px] min-h-[920px] z-50">
-                  <img src="assets/art/sven.png" class="p-6 w-[359px] h-[359px]"/>
+      <!-- Bottom half of intro section -->
+      <div class="min-h-[920px]">
+          <!-- Cards container with negative margin -->
+          <div class="flex flex-col lg:flex-row mt-5 lg:-mt-32 pb-28 items-center justify-center gap-12 px-4 relative">
+              <!-- Card 1 -->
+              <div class="flex flex-col text-center items-center bg-white rounded-lg shadow-2xl w-full max-w-[412px] h-[920px] z-50 p-4">
+                  <img src="assets/art/michael.png" class="p-6 w-full max-w-[359px] h-auto" />
                   <div class="flex flex-col text-center justify-start items-center">
-                    <h1 class="w-[266px] font-polarisCondensed font-bold text-[33px]">SVEN GIERLINGER</h1>
-                    <h2 class="w-[240px] text-[#727272] py-2 font-polaris font-medium">Senior Vice President and Chief Experience Officer, Office of Patient and Customer Experience</h2>
-                    <p class="w-[290px] font-polaris font-medium text-[20px] pb-10">“Our brand is our culture, and our culture at Northwell is one of caring and relationships. I’m proud that our unbridled commitment to design and deliver a better tomorrow is centered around patients, family caregivers, diverse communities, and our passionate workforce.”</p>
-                    </div>
+                      <h1 class="w-full max-w-[280px] font-polarisCondensed font-bold text-[28px] lg:text-[33px]">MICHAEL J. DOWLING</h1>
+                      <h2 class="w-full max-w-[240px] text-[#727272] font-polaris font-medium pt-4 pb-7 text-[18px]">President and chief executive officer, Northwell Health</h2>
+                      <p class="w-full max-w-[290px] font-polaris font-medium text-[20px] pb-10">“Optimism is ingrained in the culture of Northwell. What differentiates us is how we embrace positivity, hope, and progression – and it’s what we do best. We see each day as a new opportunity to have a positive impact on our community and relish in passing that prospect to others.”</p>
                   </div>
+              </div>
 
-                <!-- Card 3 -->
-                <div class="flex flex-col text-center items-center bg-white rounded-lg shadow-2xl w-[412px] min-h-[920px] z-50">
-                  <img src="assets/art/agne.png" class="p-6 w-[359px] h-[359px]"/>
+              <!-- Card 2 -->
+              <div class="flex flex-col text-center items-center bg-white rounded-lg shadow-2xl w-full max-w-[412px] h-[920px] z-50 p-4">
+                  <img src="assets/art/sven.png" class="p-6 w-full max-w-[359px] h-auto" />
                   <div class="flex flex-col text-center justify-start items-center">
-                    <h1 class="w-[202px] font-polarisCondensed font-bold text-[33px]">AGNES BARDEN DNP, RN, CPXP</h1>
-                    <h2 class="w-[240px] text-[#727272] py-2 font-polaris font-medium">Deputy Chief Experience Officer, Northwell Health</h2>
-                    <p class="w-[290px] font-polaris font-medium text-[20px]">“Northwell’s commitment to personalizing each and every care experience is what sets us apart. Our human-centered approach begins with empathy, compassion, and the belief that we are not only treating the patient, but the person as a whole.”</p>
-                    </div>
-                </div>
+                      <h1 class="w-full max-w-[266px] font-polarisCondensed font-bold text-[28px] lg:text-[33px]">SVEN GIERLINGER</h1>
+                      <h2 class="w-full max-w-[240px] text-[#727272] py-2 font-polaris font-medium text-[18px]">Senior Vice President and Chief Experience Officer, Office of Patient and Customer Experience</h2>
+                      <p class="w-full max-w-[290px] font-polaris font-medium text-[20px] pb-10">“Our brand is our culture, and our culture at Northwell is one of caring and relationships. I’m proud that our unbridled commitment to design and deliver a better tomorrow is centered around patients, family caregivers, diverse communities, and our passionate workforce.”</p>
+                  </div>
+              </div>
 
-            </div> 
-        </div>
-    </section>
+              <!-- Card 3 -->
+              <div class="flex flex-col text-center items-center bg-white rounded-lg shadow-2xl w-full max-w-[412px] h-[920px] z-50 p-4">
+                  <img src="assets/art/agne.png" class="p-6 w-full max-w-[359px] h-auto" />
+                  <div class="flex flex-col text-center justify-start items-center">
+                      <h1 class="w-full max-w-[202px] font-polarisCondensed font-bold text-[28px] lg:text-[33px]">AGNES BARDEN DNP, RN, CPXP</h1>
+                      <h2 class="w-full max-w-[240px] text-[#727272] py-2 font-polaris font-medium text-[18px]">Deputy Chief Experience Officer, Northwell Health</h2>
+                      <p class="w-full max-w-[290px] font-polaris font-medium text-[20px]">“Northwell’s commitment to personalizing each and every care experience is what sets us apart. Our human-centered approach begins with empathy, compassion, and the belief that we are not only treating the patient, but the person as a whole.”</p>
+                  </div>
+              </div>
+          </div> 
+      </div>
+  </section>
 
-    <!-- Contents section -->
-    <section class="flex flex-col justify-center items-center bg-[#48B748]">
 
-        <h1 class="text-[87px] text-white font-polarisCondensed font-bold pt-6 pb-16">Contents</h1>
-        <div class="flex flex-row w-[1340px] leading-tight gap-10 pb-24">
-            <div class="flex flex-col w-[430px] justify-between gap-10">
-                <div onclick="scrollToTarget('testimonials')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[33px] flex flex-col justify-center items-center rounded-xl">Patient Testimonials</div>
-                <div onclick="scrollToTarget('patientxp')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[33px] flex flex-col justify-center items-center text-center rounded-xl">PX Education & Development</div>
-                <div onclick="scrollToTarget('bi')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Business Intelligence</div>
-                <div onclick="scrollToTarget('nutrition')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Food & Nutrition</div>
-            </div>
-            <div class="flex flex-col w-[430px] justify-between gap-10">
-                <div onclick="scrollToTarget('family')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Patient & Family Partnership Council/Caregiving</div>
-                <div onclick="scrollToTarget('culture')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Culture Leaders & PX Talent Pipelines</div>
-                <div onclick="scrollToTarget('ambulatory')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Focus on Ambulatory</div>
-                <div onclick="scrollToTarget('volunteer')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Volunteer Experience</div>
-            </div>
-            <div class="flex flex-col w-[430px] justify-between gap-10">
-                <div onclick="scrollToTarget('highlights')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 text-[33px] flex flex-col justify-center items-center text-center bg-white rounded-xl">Additional Highlights</div>
-                <div onclick="scrollToTarget('looking')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Looking Ahead</div>
-                <div onclick="scrollToTarget('awards')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Awards, National Presentations, Publications & Acknowledgments</div>
-            </div>
-        </div>                   
-    </section>                   
-                                 
-    <!-- Arrows section -->
-    <section class="flex flex-col justify-center items-center bg-[url('../assets/art/arrows.png')] bg-[#0059A5]">
-        <div class="w-[861px] font-bold text-center text-white text-[35px] py-16">
-            <div class="flex flex-col justify-center items-center rounded-2xl">
-                <h2 class="font-copernicus font-semibold">“Leadership is about aiming high, and when you get to your target, raise the bar. That’s what leadership is about: constantly raising the bar. You’ll inspire people to go above and beyond what they think is possible. And when you push that way, it’s amazing what people will find out they can do that they didn’t think they could do.”</h2>
-            </div>
-                <h2 class="font-polarisCondensed font-bold pt-5">MICHAEL J. DOWLING</h2>
-        </div>                   
-    </section>                   
+
+<!-- Contents section -->
+<section class="flex flex-col justify-center items-center bg-[#48B748]">
+
+  <h1 class="text-[40px] md:text-[60px] text-white font-polarisCondensed font-bold pt-6 pb-16">Contents</h1>
+  <div class="flex justify-center flex-col md:flex-row w-full leading-tight gap-10 pb-24 px-4">
+      <div class="flex flex-col w-full md:w-[30%] justify-between gap-10">
+          <div onclick="scrollToTarget('testimonials')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[20px] md:text-[25px] lg:text-[33px] flex flex-col justify-center items-center rounded-xl">Patient Testimonials</div>
+          <div onclick="scrollToTarget('patientxp')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[20px] md:text-[25px] lg:text-[33px] flex flex-col justify-center items-center text-center rounded-xl">PX Education & Development</div>
+          <div onclick="scrollToTarget('bi')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[20px] md:text-[25px] lg:text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Business Intelligence</div>
+          <div onclick="scrollToTarget('nutrition')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[20px] md:text-[25px] lg:text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Food & Nutrition</div>
+      </div>
+      <div class="flex flex-col w-full md:w-[30%] justify-between gap-10">
+          <div onclick="scrollToTarget('family')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[20px] md:text-[25px] lg:text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Patient & Family Partnership Council/Caregiving</div>
+          <div onclick="scrollToTarget('culture')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[20px] md:text-[25px] lg:text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Culture Leaders & PX Talent Pipelines</div>
+          <div onclick="scrollToTarget('ambulatory')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[20px] md:text-[25px] lg:text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Focus on Ambulatory</div>
+          <div onclick="scrollToTarget('volunteer')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[20px] md:text-[25px] lg:text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Volunteer Experience</div>
+      </div>
+      <div class="flex flex-col w-full md:w-[30%] justify-between gap-10">
+          <div onclick="scrollToTarget('highlights')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 text-[20px] md:text-[25px] lg:text-[33px] flex flex-col justify-center items-center text-center bg-white rounded-xl">Additional Highlights</div>
+          <div onclick="scrollToTarget('looking')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[20px] md:text-[25px] lg:text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Looking Ahead</div>
+          <div onclick="scrollToTarget('awards')" class="hover:cursor-pointer font-polarisCondensed font-medium p-3 bg-white text-[20px] md:text-[25px] lg:text-[33px] flex flex-col justify-center items-center text-center rounded-xl">Awards, National Presentations, Publications & Acknowledgments</div>
+      </div>
+  </div>                   
+</section>
+                                    
+<!-- Arrows section -->
+<section class="flex flex-col justify-center items-center bg-[url('../assets/art/arrows.png')] bg-[#0059A5] py-16 md:py-24 lg:py-28 px-4 md:px-8 lg:px-16">
+  <div class="w-full max-w-[861px] font-bold text-center text-white text-[24px] md:text-[30px] lg:text-[35px]">
+      <div class="flex flex-col justify-center items-center rounded-2xl">
+          <h2 class="font-copernicus font-semibold">“Leadership is about aiming high, and when you get to your target, raise the bar. That’s what leadership is about: constantly raising the bar. You’ll inspire people to go above and beyond what they think is possible. And when you push that way, it’s amazing what people will find out they can do that they didn’t think they could do.”</h2>
+      </div>
+      <h2 class="font-polarisCondensed font-bold pt-5 text-[20px] md:text-[24px] lg:text-[28px]">MICHAEL J. DOWLING</h2>
+  </div>                   
+</section>
+  
 
     <!--Patient Testimonials section -->
-    <section id="testimonials" class="bg-[#F2F4F7] flex flex-col justify-center items-center">
-            <div class="w-[900px] text-center text-black pt-16 pb-16">
-                <h1 class="text-[87px] font-polarisCondensed font-bold py-5">Patient Testimonials</h1>
-                <p class="text-[15px] w-[963px] font-polaris font-medium">Storytelling is an essential component of patient experience. It not only allows us to hear the “voice” of our patients and families through video testimonials, written and e-mailed letters, and social media posts, but allows us to connect with and inspire others. These stories kickstart all meetings, educational sessions, and presentations, allowing for a moment of grounding and gratitude, and often reminding us of our “why.” This year presented incredible patient stories, highlighting care from several areas across the organization, including the Katz Institute for Women’s Health, Cohen Children’s Medical Center, Huntington Hospital, the cancer service line, maternal health, vascular surgery, financial services, and the volunteer experience.
-                </p>
-            </div>
+    <section id="testimonials" class="bg-[#F2F4F7] flex flex-col justify-center items-center px-4 md:px-8 lg:px-16">
+      <div class="w-full max-w-[900px] text-center text-black pt-16 pb-16">
+          <h1 class="text-[36px] md:text-[48px] lg:text-[87px] font-polarisCondensed font-bold py-5">Patient Testimonials</h1>
+          <p class="text-[15px] md:text-[17px] lg:text-[18px] font-polaris font-medium w-full max-w-[963px] mx-auto">Storytelling is an essential component of patient experience. It not only allows us to hear the “voice” of our patients and families through video testimonials, written and e-mailed letters, and social media posts, but allows us to connect with and inspire others. These stories kickstart all meetings, educational sessions, and presentations, allowing for a moment of grounding and gratitude, and often reminding us of our “why.” This year presented incredible patient stories, highlighting care from several areas across the organization, including the Katz Institute for Women’s Health, Cohen Children’s Medical Center, Huntington Hospital, the cancer service line, maternal health, vascular surgery, financial services, and the volunteer experience.
+          </p>
+      </div>
         <!-- Slider main container -->
         <div class="swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <a href="https://www.youtube.com/watch?v=bhv8oGeDcPQ" class="swiper-slide">
-                <img src="assets/art/cropped/Amelda.png" alt="Image 2" class="shadow-xl rounded-lg h-[388px] w-[400px]">
+                <img src="assets/art/labeled/Amelda.jpg" alt="Image 2" class="shadow-xl rounded-lg h-auto w-auto">
             </a>
             <a href="https://youtu.be/dg3VoX0KS4k?si=WkBZfLV2-weE-pzy" class="swiper-slide">
-                <img src="assets/art/cropped/Elizabeth.png" alt="Image 3" class="shadow-xl rounded-lg h-[388px] w-[400px]">
+                <img src="assets/art/labeled/Elizabeth.jpg" alt="Image 3" class="shadow-xl rounded-lg h-auto w-auto">
             </a>
             <a href="https://www.youtube.com/watch?v=SFaftYE2c3E" class="swiper-slide">
-              <img src="assets/art/cropped/j.png" alt="Image 4" class="shadow-xl rounded-lg h-[388px] w-[400px]">
+              <img src="assets/art/labeled/Giuliana.jpg" alt="Image 4" class="shadow-xl rounded-lg h-auto w-auto">
             </a>
             <a href="https://youtu.be/O0S4hhu3IZk?si=6OHXVW6CzovR0Iau" class="swiper-slide">
-              <img src="assets/art/cropped/m.png" alt="Image 5" class="shadow-xl rounded-lg h-[388px] w-[400px]">
+              <img src="assets/art/labeled/Mary.jpg" alt="Image 5" class="shadow-xl rounded-lg h-auto w-auto">
             </a>
             <a href="https://youtu.be/D2CCwDZ8k_s?si=fJiLd_vDLQAo5L0I" class="swiper-slide">
-              <img src="assets/art/cropped/Amanda.png" alt="Image 6" class="shadow-xl rounded-lg h-[388px] w-[400px]">
+              <img src="assets/art/labeled/Amanda.jpg" alt="Image 6" class="shadow-xl rounded-lg h-auto w-auto">
             </a>
             <a href="https://www.youtube.com/watch?v=SJ6IjAwsPcM" class="swiper-slide">
-              <img src="assets/art/cropped/Tom.png" alt="Image 7" class="shadow-xl rounded-lg h-[388px] w-[400px]">
+              <img src="assets/art/labeled/Tom.jpg" alt="Image 7" class="shadow-xl rounded-lg h-auto w-auto">
             </a>
             <a href="https://youtu.be/ULk-Avd9-oQ?si=96IITAnEwdBofzHE" class="swiper-slide">
-              <img src="assets/art/cropped/Kim.png" alt="Image 8" class="shadow-xl rounded-lg h-[388px] w-[400px]">
+              <img src="assets/art/labeled/Kim.jpg" alt="Image 8" class="shadow-xl rounded-lg h-auto w-auto">
             </a>
             <a href="https://youtu.be/2rVezW-TD14?si=0M4n540oDz33lBO3" class="swiper-slide">
-              <img src="assets/art/cropped/Faith.png" alt="Image 9" class="shadow-xl rounded-lg h-[388px] w-[400px] rounded-lg">
+              <img src="assets/art/labeled/Faith.jpg" alt="Image 9" class="shadow-xl rounded-lg h-auto w-auto rounded-lg">
             </a>
             <a href="https://www.youtube.com/watch?v=Gz9_hp-WIBE" class="swiper-slide">
-              <img src="assets/art/cropped/Alban.png" alt="Image 1" class="shadow-xl rounded-lg h-[388px] w-[400px]">
+              <img src="assets/art/labeled/Alban.jpg" alt="Image 1" class="shadow-xl rounded-lg h-auto w-auto">
             </a>
           </div>
           <!-- If we need navigation buttons -->
@@ -188,290 +194,287 @@
             <div class="pb-24"></div>
     </section>
 
-    <!-- Patient Experience section -->
-    <section id="patientxp" class="flex flex-col justify-center items-center text-black py-28 bg-white min-h-[1150px]">
-        <div class="w-[894px]">
-            <h1 class="text-[87px] leading-none font-polarisCondensed font-bold text-center mb-32">Patient Experience Education & Development </h1>
-        </div>
-        <div class="flex justify-between w-[1340px]">
-          
-            <div class="flex flex-col w-[553px]">
-                <div class="w-[425px]">
-                    <h1 class="leading-tight font-copernicus font-black text-[40px] mb-2">Empathy in Action, Education in Focus</h1>
-                    <h2 class="leading-8 font-polaris font-medium mb-8 text-[27px]">Our Compassionate Journey Through Heartfelt Learning</h2>
-                </div>
-
-                <p class="text-[15px] mb-4 leading-snug font-polaris font-medium">Over the past year, education has taken center stage. The Office of Patient and Customer Experience (OPCE) has
-                    strategically employed a mix of learning modalities to address the diverse training and developmental needs of our team members.
-                    Implementing various approaches has been crucial in meeting the increased demand for customized site-based sessions. While staying true to fundamental concepts,
-                    OPCE consistently evolves the Culture of C.A.R.E., our commitment to patients and families, ensuring that the curriculum remains relevant and adaptable. The
-                    expanded range of course offerings has emphasized the significance of Culture of C.A.R.E. train-the-trainer workshops, educating over 100 prospective champions on 
-                    the updated content and facilitation skills.
-                </p>
-                <p class="text-[15px] leading-snug font-polaris font-medium">A noteworthy educational initiative includes the ongoing Relationship-Centered Communication (RCC) course. Rooted in the Culture of C.A.R.E., 
-                    RCC is an immersive learning program with minimal didactics, placing a primary focus on experiential learning in communication skills through role play, real-time 
-                    mentoring, and coaching. It goes beyond purely lessons; it embodies a language deeply grounded in evidence-based communication, seamlessly bridging the gap between 
-                    patients and providers, essential for authentic empathy. The success of the program has gained recognition from the Journal of Patient Experience, which published a 
-                    narrative titled “From Monologue to Dialogue: The Pursuit of Relationship-Centered Communication Across a Large, Integrated Healthcare System.”
-                </p>
+<!-- Patient Experience section -->
+<section id="patientxp" class="flex flex-col justify-center items-center text-black py-28 bg-white px-4 md:px-8 lg:px-16">
+  <div class="w-full max-w-[894px]">
+      <h1 class="text-[36px] md:text-[48px] lg:text-[87px] leading-none font-polarisCondensed font-bold text-center mb-12 md:mb-16 lg:mb-32">Patient Experience Education & Development</h1>
+  </div>
+  <div class="flex flex-col lg:flex-row justify-between w-full max-w-[1340px] space-y-8 lg:space-y-0 lg:space-x-8">
+      <div class="flex flex-col w-full lg:w-[553px] space-y-4">
+          <div class="w-full max-w-[425px]">
+              <h1 class="leading-tight font-copernicus font-black text-[24px] md:text-[32px] lg:text-[40px] mb-2">Empathy in Action, Education in Focus</h1>
+              <h2 class="leading-8 font-polaris font-medium mb-8 text-[18px] md:text-[24px] lg:text-[27px]">Our Compassionate Journey Through Heartfelt Learning</h2>
           </div>
 
-          <img src="assets/art/dif.png" class="w-[700px] h-[610px] flex-shrink-0"/>
-        </div>
-    </section>
+          <p class="text-[15px] md:text-[16px] lg:text-[17px] mb-4 leading-snug font-polaris font-medium">Over the past year, education has taken center stage. The Office of Patient and Customer Experience (OPCE) has strategically employed a mix of learning modalities to address the diverse training and developmental needs of our team members. Implementing various approaches has been crucial in meeting the increased demand for customized site-based sessions. While staying true to fundamental concepts, OPCE consistently evolves the Culture of C.A.R.E., our commitment to patients and families, ensuring that the curriculum remains relevant and adaptable. The expanded range of course offerings has emphasized the significance of Culture of C.A.R.E. train-the-trainer workshops, educating over 100 prospective champions on the updated content and facilitation skills.</p>
+          <p class="text-[15px] md:text-[16px] lg:text-[17px] leading-snug font-polaris font-medium">A noteworthy educational initiative includes the ongoing Relationship-Centered Communication (RCC) course. Rooted in the Culture of C.A.R.E., RCC is an immersive learning program with minimal didactics, placing a primary focus on experiential learning in communication skills through role play, real-time mentoring, and coaching. It goes beyond purely lessons; it embodies a language deeply grounded in evidence-based communication, seamlessly bridging the gap between patients and providers, essential for authentic empathy. The success of the program has gained recognition from the Journal of Patient Experience, which published a narrative titled “From Monologue to Dialogue: The Pursuit of Relationship-Centered Communication Across a Large, Integrated Healthcare System.”</p>
+      </div>
 
-    <!-- By the Numbers section -->
-    <section class="flex flex-col text-4xl justify-center items-center text-white py-12 bg-[#2A53B1]">
-            <p class="text-[40px] font-polarisCondensed font-bold mb-12">RCC BY THE NUMBERS:</p>
-            <div class="flex flex-row text-center font-polaris justify-between w-[1200px]">
-                <div class="w-80 leading-[55px] text-[47px]"><div class="counter font-black" data-count="3400">0</div> PROVIDERS EDUCATED</div>
-                <div class="w-80 leading-[55px] text-[47px]"><div class="counter font-black" data-count="310">0</div> COURSES</div>
-                <div class="w-80 leading-[55px] text-[47px]"><div class="counter font-black" data-count="35">0</div> FACULTY</div>
-            </div>
-    </section>
+      <img src="assets/art/dif.png" class="w-full h-auto max-w-lg self-center rounded-lg shadow-lg"/>
+  </div>
+</section>
 
-    <!-- Business Intelligence section -->
-    <section id="bi" class="flex flex-col text-4xl justify-center items-center text-black pt-20py-12 bg-[url('../assets/art/nodes.png')] bg-white bg-cover">
-        <div class="w-[1200px]">
-            <h1 class="text-[87px] py-10 font-polarisCondensed font-bold text-center mb-32">Business Intelligence</h1>
-        </div>
-        
-        <div class="flex flex-col justify-center items-center text-center w-[1340px]">
-            <div class="flex flex-col justify-center items-center w-[1000px]">
-            <div class="w-[1000px] flex flex-col justify-center items-center">
-                <h1 class="leading-10 text-[40px] font-copernicus font-black mb-2">Driving Continuous Process Improvement</h1>
-                <h2 class="leading-8 font-polaris font-medium my-4 text-[27px]">Leveraging data-driven insights to effectively target and prioritize continuous process improvement efforts through the lens of patient experience </h2>
-            </div>
-            <p class="text-[15px] text-center font-polaris w-[849px] leading-6 mb-4">It is important that business and work unit leaders throughout the organization have the necessary tools and support for continuously identifying and prioritizing areas for improvement. Therefore, the OPCE Business Intelligence team has partnered with regional ambulatory culture leaders and operational leadership on the deployment of a continuous process improvement model designed to proactively identify practice locations with patient experience improvement needs. Leveraging our regional support model, the team engages each region on a quarterly cadence with a list of locations with the greatest opportunity for improvement. The analysis is based on quantitative and qualitative feedback that is trended and benchmarked both internally and externally. Locations that are deemed ‘change ready’ by regional leadership are then activated onto a Plan, Do, Study, Act (PDSA) improvement cycle with specific improvement goals. As local practice management leads the improvement effort with support from regional operations leadership, the OPCE BI team delivers ongoing analytics, best practice, knowledge management, and progress tracking support. Every quarter, active PDSA locations are evaluated for a disposition of ‘Graduate’, ‘Extend’, or ‘Discontinue’ while new locations are activated to offset the graduated and discontinued efforts.</p>
-            <div class="flex flex-col justify-center items-center gap-5 m-10">
-                <div class="flex flex-row gap-5 justify-center items-center">
-                    <img src="assets/art/Picture1.png" class="rounded-3xl shadow-lg shadow-[#28BE0D] w-[590px] h-[280px]">
-                    <img src="assets/art/Picture2.png" class="rounded-3xl shadow-lg shadow-[#019CDA] w-[590px] h-[280px]">
-                </div>
-                <div class="flex flex-row gap-5 rounded-2xl justify-center items-center">
-                    <img src="assets/art/Picture3.png" class="rounded-3xl shadow-lg shadow-[#28BE0D] w-[590px] h-[280px]">
-                    <img src="assets/art/Picture4.png" class="rounded-3xl shadow-lg shadow-[#019CDA] w-[590px] h-[280px]">
-                </div>
-                <div class="flex flex-row gap-5 rounded-2xl justify-center items-center">
-                    <img src="assets/art/Picture5.png" class="rounded-3xl shadow-lg shadow-[#019CDA] w-[590px] h-[280px]">
-                </div>
-            </div>
+<!-- By the Numbers section -->
+<section class="flex flex-col text-4xl justify-center items-center text-white py-12 bg-[#2A53B1]">
+  <p class="text-[24px] md:text-[32px] lg:text-[40px] font-polarisCondensed font-bold mb-8 md:mb-12">RCC BY THE NUMBERS:</p>
+  <div class="flex flex-col md:flex-row text-center font-polaris justify-between w-full max-w-[1200px] gap-8 md:gap-4">
+      <div class="w-full md:w-1/3 leading-[40px] md:leading-[55px] text-[24px] md:text-[30px] lg:text-[47px]">
+          <div class="counter font-black" data-count="3400">0</div> 
+          <span class="block">PROVIDERS EDUCATED</span>
+      </div>
+      <div class="w-full md:w-1/3 leading-[40px] md:leading-[55px] text-[24px] md:text-[30px] lg:text-[47px]">
+          <div class="counter font-black" data-count="310">0</div> 
+          <span class="block">COURSES</span>
+      </div>
+      <div class="w-full md:w-1/3 leading-[40px] md:leading-[55px] text-[24px] md:text-[30px] lg:text-[47px]">
+          <div class="counter font-black" data-count="35">0</div> 
+          <span class="block">FACULTY</span>
+      </div>
+  </div>
+</section>
+
+<!-- Business Intelligence section -->
+<section id="bi" class="flex flex-col text-4xl justify-center items-center text-black pt-20 py-12 bg-[url('../assets/art/nodes.png')] bg-white bg-cover">
+  <div class="w-full max-w-[1200px]">
+      <h1 class="text-[36px] md:text-[48px] lg:text-[87px] py-10 font-polarisCondensed font-bold text-center mb-12 md:mb-16 lg:mb-32">Business Intelligence</h1>
+  </div>
+  
+  <div class="flex flex-col justify-center items-center text-center w-full max-w-[1340px]">
+      <div class="flex flex-col justify-center items-center w-full max-w-[1000px]">
+          <div class="w-full max-w-[1000px] flex flex-col justify-center items-center">
+              <h1 class="leading-10 text-[24px] md:text-[32px] lg:text-[40px] font-copernicus font-black mb-2">Driving Continuous Process Improvement</h1>
+              <h2 class="leading-8 font-polaris font-medium my-4 text-[18px] md:text-[24px] lg:text-[27px]">Leveraging data-driven insights to effectively target and prioritize continuous process improvement efforts through the lens of patient experience</h2>
           </div>
-        </div>
-
-        <h1 class="leading-10 pt-24 font-copernicus font-black text-center text-[40px] mb-2">Getting dreamy</h1>
-        <h2 class="leading-8 mb-8 text-[27px] font-polaris text-center font-medium w-[500px] py-2">Modernizing our business intelligence capabilities by moving to the cloud</h2>
-
-        <div class="flex gap-24 w-[1000px] pb-24">
-          <div class="flex flex-col w-[650px] ml-4">
-            <p class="text-[15px] font-polaris font-medium leading-5">As a business intelligence organization, we have access to a lot of data. In addition to the quantitative and qualitative insights we gather in the roughly 500,000 Patient Experience surveys we get each year, we also have access to a wealth of data captured from the patient’s clinical encounter. This is all used to enhance our dashboards with more explanatory data and allows us to produce more in-depth analyses for the organization. However, that depth of and breadth of data comes at a cost, and we’ve realized that we’ve hit the physical limitations of our traditional business intelligence environment. To truly push the envelope of services we provide we need to take advantage of a modern data platform that will grow with us as we grow our team. We have partnered with the Northwell Health Cloud Center of Excellence to migrate our data architecture to the cloud. This will enable us to continue to enhance the services we provide while the organization grows around us, as well as offer new capabilities that we had previously been unable to provide due to resource constraints. This includes deeper insights to the patient experience, increased self-service capabilities, and customizable on-demand reporting beyond the Tableau dashboards.</p>
+          <p class="text-[15px] md:text-[16px] lg:text-[17px] text-center font-polaris w-full px-4 max-w-[849px] leading-6 mb-4">It is important that business and work unit leaders throughout the organization have the necessary tools and support for continuously identifying and prioritizing areas for improvement. Therefore, the OPCE Business Intelligence team has partnered with regional ambulatory culture leaders and operational leadership on the deployment of a continuous process improvement model designed to proactively identify practice locations with patient experience improvement needs. Leveraging our regional support model, the team engages each region on a quarterly cadence with a list of locations with the greatest opportunity for improvement. The analysis is based on quantitative and qualitative feedback that is trended and benchmarked both internally and externally. Locations that are deemed ‘change ready’ by regional leadership are then activated onto a Plan, Do, Study, Act (PDSA) improvement cycle with specific improvement goals. As local practice management leads the improvement effort with support from regional operations leadership, the OPCE BI team delivers ongoing analytics, best practice, knowledge management, and progress tracking support. Every quarter, active PDSA locations are evaluated for a disposition of ‘Graduate’, ‘Extend’, or ‘Discontinue’ while new locations are activated to offset the graduated and discontinued efforts.</p>
+          <div class="flex flex-col justify-center items-center gap-5 m-10">
+              <div class="flex flex-col lg:flex-row gap-5 justify-center items-center">
+                  <img src="assets/art/Picture1.png" class="rounded-3xl shadow-lg shadow-[#28BE0D] w-full max-w-[590px] h-auto">
+                  <img src="assets/art/Picture2.png" class="rounded-3xl shadow-lg shadow-[#019CDA] w-full max-w-[590px] h-auto">
+              </div>
+              <div class="flex flex-col lg:flex-row gap-5 rounded-2xl justify-center items-center">
+                  <img src="assets/art/Picture3.png" class="rounded-3xl shadow-lg shadow-[#28BE0D] w-full max-w-[590px] h-auto">
+                  <img src="assets/art/Picture4.png" class="rounded-3xl shadow-lg shadow-[#019CDA] w-full max-w-[590px] h-auto">
+              </div>
+              <div class="flex flex-col lg:flex-row gap-5 rounded-2xl justify-center items-center">
+                  <img src="assets/art/Picture5.png" class="rounded-3xl shadow-lg shadow-[#019CDA] w-full max-w-[590px] h-auto">
+              </div>
           </div>
-          <img src="assets/art/icon1.png" class="w-[250px] h-[230px] flex-shrink-0"/>
-        </div>
+      </div>
+  </div>
 
-        <h1 class="leading-10 font-copernicus font-black text-[40px] mb-2 text-center">Partnership</h1>
-        <h2 class="leading-8 mb-8 text-[27px] w-[500px] py-2 font-polaris font-medium text-center">A renewed partnership in the spirit of innovation and transformation</h2>
+  <h1 class="leading-10 pt-24 font-copernicus font-black text-center text-[24px] md:text-[32px] lg:text-[40px] mb-2">Getting dreamy</h1>
+  <h2 class="leading-8 mb-8 text-[18px] md:text-[24px] lg:text-[27px] font-polaris text-center font-medium w-full max-w-[500px] py-2">Modernizing our business intelligence capabilities by moving to the cloud</h2>
 
-        <div class="flex gap-24 w-[1000px] pb-32">
-          <img src="assets/art/icon2.png" class="w-[250px] h-[230px] flex-shrink-0"/>
-          <div class="flex flex-col gap-5 w-[650px] ml-4">
-            <p class="text-[15px] font-polaris font-medium leading-5">Northwell Health and Press Ganey have renewed their partnership with the goal of revolutionizing how the human experience in healthcare is gathered, understood, and acted upon by leveraging advanced technologies such as artificial intelligence (AI), machine learning (ML), and natural language processing (NLP).  Together, we are also introducing innovative approaches like the Human Effort Score (HES) and patient experience profiling to gain deeper insights into individual patient preferences and needs.</p>
-            <p class="text-[15px] font-polaris font-medium leading-5">Through AI and ML algorithms, Northwell analyzes vast amounts of healthcare data to predict patient experience outcomes and personalize interactions, while NLP technology extracts valuable insights from unstructured data sources such as patient feedback.</p>
-            <p class="text-[15px] font-polaris font-medium leading-5">The introduction of the HES will allow Northwell to quantify the level of effort patients perceive when interacting with healthcare services, identifying areas of digital and non-digital points of friction and implementing targeted interventions to streamline processes and reduce patient burden. Additionally, patient experience profiling techniques will enable Northwell to create comprehensive profiles for each patient, incorporating demographic information, medical history, and communication preferences.</p>
-            <p class="text-[15px] font-polaris font-medium leading-5">By analyzing past interactions and feedback, Northwell anticipates patient preferences, proactively addresses concerns, and allocates resources effectively, leading to improved health outcomes and stronger connections between patients and providers. This collaborative effort between Northwell Health and Press Ganey signifies a commitment to patient-centered care and continuous innovation in the healthcare industry.</p>
+  <div class="flex flex-col lg:flex-row gap-12 justify-center items-center w-full max-w-[1000px] pb-24">
+      <div class="flex flex-col w-full lg:w-[650px] ml-4">
+          <p class="text-[15px] font-polaris font-medium leading-5 px-4">As a business intelligence organization, we have access to a lot of data. In addition to the quantitative and qualitative insights we gather in the roughly 500,000 Patient Experience surveys we get each year, we also have access to a wealth of data captured from the patient’s clinical encounter. This is all used to enhance our dashboards with more explanatory data and allows us to produce more in-depth analyses for the organization. However, that depth of and breadth of data comes at a cost, and we’ve realized that we’ve hit the physical limitations of our traditional business intelligence environment. To truly push the envelope of services we provide we need to take advantage of a modern data platform that will grow with us as we grow our team. We have partnered with the Northwell Health Cloud Center of Excellence to migrate our data architecture to the cloud. This will enable us to continue to enhance the services we provide while the organization grows around us, as well as offer new capabilities that we had previously been unable to provide due to resource constraints. This includes deeper insights to the patient experience, increased self-service capabilities, and customizable on-demand reporting beyond the Tableau dashboards.</p>
+      </div>
+      <img src="assets/art/icon1.png" class="w-full max-w-[250px] h-auto flex-shrink-0">
+  </div>
+
+  <h1 class="leading-10 font-copernicus font-black text-[24px] md:text-[32px] lg:text-[40px] mb-2 text-center">Partnership</h1>
+  <h2 class="leading-8 mb-8 text-[18px] md:text-[24px] lg:text-[27px] w-full max-w-[500px] py-2 font-polaris font-medium text-center">A renewed partnership in the spirit of innovation and transformation</h2>
+
+  <div class="flex flex-col lg:flex-row gap-12 w-full justify-center items-center max-w-[1000px] pb-32">
+      <img src="assets/art/icon2.png" class="w-full max-w-[250px] h-auto flex-shrink-0">
+      <div class="flex flex-col px-4 gap-5 w-full lg:w-[650px] ml-4">
+          <p class="text-[15px] font-polaris font-medium leading-5">Northwell Health and Press Ganey have renewed their partnership with the goal of revolutionizing how the human experience in healthcare is gathered, understood, and acted upon by leveraging advanced technologies such as artificial intelligence (AI), machine learning (ML), and natural language processing (NLP). Together, we are also introducing innovative approaches like the Human Effort Score (HES) and patient experience profiling to gain deeper insights into individual patient preferences and needs.</p>
+          <p class="text-[15px] font-polaris font-medium leading-5">Through AI and ML algorithms, Northwell analyzes vast amounts of healthcare data to predict patient experience outcomes and personalize interactions, while NLP technology extracts valuable insights from unstructured data sources such as patient feedback.</p>
+          <p class="text-[15px] font-polaris font-medium leading-5">The introduction of the HES will allow Northwell to quantify the level of effort patients perceive when interacting with healthcare services, identifying areas of digital and non-digital points of friction and implementing targeted interventions to streamline processes and reduce patient burden. Additionally, patient experience profiling techniques will enable Northwell to create comprehensive profiles for each patient, incorporating demographic information, medical history, and communication preferences.</p>
+          <p class="text-[15px] font-polaris font-medium leading-5">By analyzing past interactions and feedback, Northwell anticipates patient preferences, proactively addresses concerns, and allocates resources effectively, leading to improved health outcomes and stronger connections between patients and providers. This collaborative effort between Northwell Health and Press Ganey signifies a commitment to patient-centered care and continuous innovation in the healthcare industry.</p>
+      </div>
+  </div>
+</section>
+<!-- Food and Nutrition section -->
+<section id="nutrition" class="flex flex-col justify-center items-center text-white bg-[#1A9AEA] py-28 px-4 md:px-8 lg:px-16">
+  <h1 class="text-[36px] md:text-[48px] lg:text-[87px] font-polarisCondensed font-bold mb-12 md:mb-16 lg:mb-32">Food & Nutrition</h1>
+
+  <div class="flex flex-col lg:flex-row gap-12 w-full max-w-[1340px] pb-32">
+      <div class="w-full lg:w-[882px]">
+          <div class="aspect-w-16 aspect-h-9">
+              <img src="assets/art/food.jpg" class="w-full h-full object-cover flex-shrink-0 rounded-lg shadow-lg" />
           </div>
-        </div>
-    </section>
-
-<!--Food and Nutrition section -->
-  <section id="nutrition" class="flex flex-col justify-center items-center text-white bg-[#1A9AEA] py-28">
-    <h1 class="text-[87px] font-polarisCondensed font-bold mb-32">Food & Nutrition</h1>
-
-    <div class="flex gap-24 w-[1340px] pb-32">
-      <div>
-        <img src="assets/art/food.jpg" class="w-[882px] h-[587px] flex-shrink-0"/>
-        <p class="text-white font-polaris font-bold text-[12px] pt-3 w-[850px]">The Food & Nutrition team holding a teaching kitchen at Queens County Farm. From left to right: Jennifer Walden-Weprin (QCF), Manuel Rios III, Michael Dowling, Sven Gierlinger, Dr. Debbie Salas-Lopez, and Bruno Tison</p>
+          <p class="text-white font-polaris font-bold text-[12px] pt-3 w-full lg:w-[850px]">The Food & Nutrition team holding a teaching kitchen at Queens County Farm. From left to right: Jennifer Walden-Weprin (QCF), Manuel Rios III, Michael Dowling, Sven Gierlinger, Dr. Debbie Salas-Lopez, and Bruno Tison</p>
       </div>
 
-      <div class="flex flex-col w-[380px] ml-4">
-        <h1 class="leading-10 text-[40px] font-copernicus font-black mb-2">Elevating Taste and Wellness:</h1>
-        <h2 class="leading-tight mb-8 font-polaris font-medium text-[27px]">Where Culinary Brilliance Meets Clinical Expertise</h2>
-        <p class="text-[15px] font-polaris font-medium">The goal of the food and nutrition department is to elevate how healthcare professionals view food, recognizing there is an intrinsic responsibility and obligation to lead by example, prioritizing food and nutrition as an essential facet of health and care delivery. Northwell has spearheaded this space as recognized by numerous spotlights on national television, podcasts, national presentations, research journals, and other prestigious publications such as PEOPLE magazine, Washington Post, Wall Street Journal and Becker’s Healthcare Review.
-        The quality of the food reached its all-time high in 2023, consistently ranking in the 84 percentile. Northwell signed partnership agreements with The Center for Discovery in Monticello, NY, along with local Queens County Farm to procure fresh produce, and to open education throughout the community on what it means to “eat healthy.”</p>
+      <div class="flex flex-col w-full lg:w-[380px] ml-4">
+          <h1 class="leading-10 text-[24px] md:text-[32px] lg:text-[40px] font-copernicus font-black mb-2">Elevating Taste and Wellness:</h1>
+          <h2 class="leading-tight mb-8 font-polaris font-medium text-[18px] md:text-[24px] lg:text-[27px]">Where Culinary Brilliance Meets Clinical Expertise</h2>
+          <p class="text-[15px] font-polaris font-medium">The goal of the food and nutrition department is to elevate how healthcare professionals view food, recognizing there is an intrinsic responsibility and obligation to lead by example, prioritizing food and nutrition as an essential facet of health and care delivery. Northwell has spearheaded this space as recognized by numerous spotlights on national television, podcasts, national presentations, research journals, and other prestigious publications such as PEOPLE magazine, Washington Post, Wall Street Journal and Becker’s Healthcare Review. The quality of the food reached its all-time high in 2023, consistently ranking in the 84 percentile. Northwell signed partnership agreements with The Center for Discovery in Monticello, NY, along with local Queens County Farm to procure fresh produce, and to open education throughout the community on what it means to “eat healthy.”</p>
       </div>
-    </div>
+  </div>
 
-    <h1 class="text-[87px] font-polarisCondensed font-bold mb-32">Nutritional Achievments</h1>
+  <h1 class="text-[36px] md:text-[48px] lg:text-[87px] font-polarisCondensed font-bold mb-12 md:mb-16 lg:mb-32">Nutritional Achievements</h1>
 
-    <div class="flex gap-24 w-[1340px] pb-32">
-      <div class="flex flex-col font-polaris font medium w-[380px] ml-4">
-        <p class="text-[15px] font-polaris font-medium">Registered dietitian/nutritionist leadership spearheaded the creation of a Standardized Adult Nutrition Formulary for enteral and oral nutrition. 93% of sites added plant-based oral/enteral products and 64% of sites reported >25% increase in plant-based products used. Another highlight was the addition of a standardized nutrition screen malnutrition screening tool (MST) to Nursing risk screens. This enabled timely nutrition care to patients at nutritional risk potentially reducing length of stay and readmission rates. Malnutrition toolkits for team education were enhanced and system policies were updated. Looking ahead, we continue to grow and develop CSA partnerships for local, fresh produce in our hospitals.</p>
+  <div class="flex flex-col lg:flex-row gap-12 w-full max-w-[1340px] pb-32">
+      <div class="flex flex-col font-polaris font medium w-full lg:w-[380px] ml-4">
+          <p class="text-[15px] font-polaris font-medium">Registered dietitian/nutritionist leadership spearheaded the creation of a Standardized Adult Nutrition Formulary for enteral and oral nutrition. 93% of sites added plant-based oral/enteral products and 64% of sites reported >25% increase in plant-based products used. Another highlight was the addition of a standardized nutrition screen malnutrition screening tool (MST) to Nursing risk screens. This enabled timely nutrition care to patients at nutritional risk potentially reducing length of stay and readmission rates. Malnutrition toolkits for team education were enhanced and system policies were updated. Looking ahead, we continue to grow and develop CSA partnerships for local, fresh produce in our hospitals.</p>
       </div>
-      <div>
-        <img src="assets/art/nutritional.png" class="w-[855px] h-[672px] flex-shrink-0"/>
+      <div class="w-full lg:w-[855px]">
+          <div class="aspect-w-16 aspect-h-9">
+              <img src="assets/art/nutritional.png" class="w-full h-full object-cover flex-shrink-0 rounded-lg shadow-lg" />
+          </div>
       </div>
-    </div>
-  </section>
+  </div>
+</section>
+
     <div class="w-full h-[2px] bg-white"></div>
     
-    <!-- Patient and Family -->
-    <section id="family" class="flex flex-col justify-center items-center text-white py-28 bg-[#48B748] min-h-[1150px]">
-        <div class="w-[1340px]">
-            <h1 class="text-[87px] font-polarisCondensed font-bold text-center leading-tight mb-20">Patient & Family Partnership Council/Caregiving </h1>
-        </div>
-        <div class="flex flex-row justify-center gap-16 w-[1300px]">
-          <img src="assets/art/hands.jpg" class="w-[900px] h-[590px]"/>
-            <div class="flex flex-col w-[580px]">
-            <div class="w-[416px]">
-                <h1 class="leading-10 font-copernicus font-black text-[40px] mb-2">Guided by Passion, Driven by Patients </h1>
-                <h2 class="leading-8 font-polaris font-medium w-[330px] mb-4 text-[26px]">Including Patients & Family Members in the Future of Healthcare</h2>
-            </div>
+<!-- Patient and Family -->
+<section id="family" class="flex flex-col justify-center items-center text-white py-28 bg-[#48B748] min-h-[1150px] px-4 md:px-8 lg:px-16">
+  <div class="w-full max-w-[1340px]">
+      <h1 class="text-[36px] md:text-[48px] lg:text-[87px] font-polarisCondensed font-bold text-center leading-tight mb-12 md:mb-16 lg:mb-20">Patient & Family Partnership Council/Caregiving</h1>
+  </div>
+  <div class="flex flex-col lg:flex-row justify-center gap-12 lg:gap-16 w-full max-w-[1300px]">
+      <img src="assets/art/hands.jpg" class="w-full lg:w-[900px] h-auto rounded-lg shadow-lg" />
+      <div class="flex flex-col w-full lg:w-[580px]">
+          <div class="w-full max-w-[416px]">
+              <h1 class="leading-10 font-copernicus font-black text-[24px] md:text-[32px] lg:text-[40px] mb-2">Guided by Passion, Driven by Patients</h1>
+              <h2 class="leading-8 font-polaris font-medium text-[18px] md:text-[22px] lg:text-[26px] mb-4">Including Patients & Family Members in the Future of Healthcare</h2>
+          </div>
+          <p class="text-[15px] font-polaris font-medium mb-4">Northwell’s commitment to a patient- and family-centered approach continued with the 9th year of our System Patient & Family Partnership Council (PFPC). This highly engaged group met virtually to share their perspective and feedback on various topics impacting our patients such as Patient Access Services, our Volunteer network, CMS Star Ratings & Data, and more! A major celebration took place when Northwell was awarded a PFAC-tor award for ‘Excellence in Patient Family Advisory Councils for System Wide Partnerships.” An additional highlight was the addition of 53 new PFPC members across the health system. Caregiving also remains a priority with growth to 9 total Caregiver Centers system-wide, including the grand opening of the Phelps Hospital Caregiver Center. In addition, the Northwell presentation selected to be featured at the national 2023 Press Ganey Conference was on Caregiving, presented by Tara Anglim, Alyssa McCready, and Kacey Farber. Continued development, sustainment, and expansion of Patient & Family Partnership Councils, as well as Caregiver Centers throughout the organization remain a key focus in 2024.</p>
+      </div>
+  </div>
+</section>
 
-            <p class="text-[15px] mb-4 font-polaris font-medium">Northwell’s commitment to a patient- and family-centered approach continued with the 9th year of our System Patient & Family Partnership Council (PFPC). This highly engaged group met virtually to share their perspective and feedback on various topics impacting our patients such as Patient Access Services, our Volunteer network, CMS Star Ratings & Data, and more! A major celebration took place when Northwell was awarded a PFAC-tor award for ‘Excellence in Patient Family Advisory Councils for System Wide Partnerships.” An additional highlight was the addition of 53 new PFPC members across the health system. Caregiving also remains a priority with growth to 9 total Caregiver Centers system-wide, including the grand opening of the Phelps Hospital Caregiver Center. In addition, the Northwell presentation selected to be featured at the national 2023 Press Ganey Conference was on Caregiving, presented by Tara Anglim, Alyssa McCready, and Kacey Farber. Continued development, sustainment, and expansion of Patient & Family Partnership Councils, as well as Caregiver Centers throughout the organization remain a key focus in 2024.
-            </p>
-          </div>
-        </div>
-    </section>
 
-    <!--Culture Leaders section -->
-      <section id="culture" class="flex flex-col justify-center items-center bg-white py-28">
-        <h1 class="text-[87px] font-polarisCondensed font-bold mb-32">Culture Leaders & PX Talent Pipelines</h1>
+<!-- Culture Leaders section -->
+<section id="culture" class="flex flex-col justify-center items-center bg-white py-28 px-4 md:px-8 lg:px-16">
+  <h1 class="text-[36px] md:text-[48px] lg:text-[87px] text-center font-polarisCondensed font-bold mb-12 md:mb-16 lg:mb-32">Culture Leaders & PX Talent Pipelines</h1>
 
-        <div class="flex gap-24 w-[1340px] pb-32">
-          <div class="flex flex-col w-[380px] ml-4">
-            <h1 class="leading-10 font-copernicus font-black text-[40px] mb-2">Culture Leader Summit</h1>
-            <h2 class="leading-8 mb-8 font-polaris font-medium text-[27px]">Designing the Future of Patient Experience</h2>
-            <p class="text-[15px] font-polaris font-medium">In early November, Northwell Culture Leaders had the opportunity to come together in-person for the for the 8th annual Culture Leader Summit, held at The Feinstein Institutes for Medical Research (FIMR). With the underlying theme of “Innovate & Elevate: Designing the Future of PX,” this event brought an exciting day of conversation, an inspiring patient story featuring a patient and a leader from the FIMR, robust discussion on the state and future of PX, and gathered a panel of key executive leadership to discuss how their specialties impact patient experience. This year, Culture Leaders participated in a Drum Circle, encouraging connection through music, creation of harmony amongst the group, and even producing a therapeutic experience!</p>
-          </div>
-          <div class="flex flex-col">
-            <img src="assets/art/soomit.png" class="w-[882px] h-[587px] flex-shrink-0"/>
-            <p class="text-black pt-3 font-polaris font-bold text-[12px] w-[800px]">The OPCE and Culture Leaders joining together after the Drum Circle segment of the Culture Leader Summit</p>
-          </div>
-        </div>
+  <div class="flex flex-col lg:flex-row gap-12 w-full max-w-[1340px] pb-32">
+      <div class="flex flex-col w-full lg:w-[380px] ml-4">
+          <h1 class="leading-10 font-copernicus font-black text-[24px] md:text-[32px] lg:text-[40px] mb-2">Culture Leader Summit</h1>
+          <h2 class="leading-8 mb-8 font-polaris font-medium text-[18px] md:text-[22px] lg:text-[27px]">Designing the Future of Patient Experience</h2>
+          <p class="text-[15px] font-polaris font-medium">In early November, Northwell Culture Leaders had the opportunity to come together in-person for the for the 8th annual Culture Leader Summit, held at The Feinstein Institutes for Medical Research (FIMR). With the underlying theme of “Innovate & Elevate: Designing the Future of PX,” this event brought an exciting day of conversation, an inspiring patient story featuring a patient and a leader from the FIMR, robust discussion on the state and future of PX, and gathered a panel of key executive leadership to discuss how their specialties impact patient experience. This year, Culture Leaders participated in a Drum Circle, encouraging connection through music, creation of harmony amongst the group, and even producing a therapeutic experience!</p>
+      </div>
+      <div class="flex flex-col">
+          <img src="assets/art/soomit.png" class="w-full lg:w-[882px] h-auto flex-shrink-0 rounded-lg shadow-lg" />
+          <p class="text-black pt-3 font-polaris font-bold text-[12px] w-full lg:w-[800px]">The OPCE and Culture Leaders joining together after the Drum Circle segment of the Culture Leader Summit</p>
+      </div>
+  </div>
 
-        <div class="flex gap-16 w-[1340px] pb-32">
-          <div class="flex flex-col">
-            <img src="assets/art/hih.png" class="w-[781px] h-[610px] flex-shrink-0"/>
-            <p class="text-black pt-3 font-polaris font-bold text-[12px] w-[800px]">The 2023 Cohort of the Hospitality in Healthcare Internship at their Program Report-Out.</p>
-          </div>
-          <div class="flex flex-col w-[600px] ml-4">
-            <h1 class="leading-10 font-copernicus font-black text-[40px] mb-2">Hospitality in Healthcare Internship</h1>
-            <h2 class="leading-8 font-polaris font-medium mb-8 text-[27px]">An experiential learning program</h2>
-            <p class="text-[15px] font-polaris font-medium pb-5">Hospitality remains at the forefront of our patient experience strategy. The 6th cohort of the Hospitality in Healthcare Internship included 15 distinguished college students, creating a hospitality-minded pipeline of talent into the organization. With interns located at tertiary and community hospitals, regional ambulatory practices, and non-clinical administrative departments, they were able to see the impact and importance of hospitality across the continuum of care.</p>
-            <p class="text-[15px] font-polaris font-medium">This year’s capstone projects raised the bar, focusing on key strategic elements in healthcare, such as the emergency department, medication communication, the family & caregiver experience, and diversity, equity, and inclusion. In a post-program survey, 100% of interns shared that they would recommend this program to a friend and participate again, if given the opportunity. To date, Northwell has hired approximately 30% of this program’s interns solidifying it as a pipeline program. It also continues to gain interest internally and nationally evident through the yearly growth.</p>
-          </div>
-        </div>
-      </section>
-    
-    <!--Focus on Ambulatory section -->
-    <section id="ambulatory" class="flex flex-col justify-center items-center bg-[#F2F4F7]">
-        <h1 class="text-[87px] font-polarisCondensed font-bold py-24">Focus on Ambulatory</h1>
+  <div class="flex flex-col lg:flex-row gap-12 w-full max-w-[1340px] pb-32">
+      <div class="flex flex-col">
+          <img src="assets/art/hih.png" class="w-full lg:w-[781px] h-auto flex-shrink-0 rounded-lg shadow-lg" />
+          <p class="text-black pt-3 font-polaris font-bold text-[12px] w-full lg:w-[800px]">The 2023 Cohort of the Hospitality in Healthcare Internship at their Program Report-Out.</p>
+      </div>
+      <div class="flex flex-col w-full lg:w-[600px] ml-4">
+          <h1 class="leading-10 font-copernicus font-black text-[24px] md:text-[32px] lg:text-[40px] mb-2">Hospitality in Healthcare Internship</h1>
+          <h2 class="leading-8 font-polaris font-medium mb-8 text-[18px] md:text-[22px] lg:text-[27px]">An experiential learning program</h2>
+          <p class="text-[15px] font-polaris font-medium pb-5">Hospitality remains at the forefront of our patient experience strategy. The 6th cohort of the Hospitality in Healthcare Internship included 15 distinguished college students, creating a hospitality-minded pipeline of talent into the organization. With interns located at tertiary and community hospitals, regional ambulatory practices, and non-clinical administrative departments, they were able to see the impact and importance of hospitality across the continuum of care.</p>
+          <p class="text-[15px] font-polaris font-medium">This year’s capstone projects raised the bar, focusing on key strategic elements in healthcare, such as the emergency department, medication communication, the family & caregiver experience, and diversity, equity, and inclusion. In a post-program survey, 100% of interns shared that they would recommend this program to a friend and participate again, if given the opportunity. To date, Northwell has hired approximately 30% of this program’s interns solidifying it as a pipeline program. It also continues to gain interest internally and nationally evident through the yearly growth.</p>
+      </div>
+  </div>
+</section>
 
-        <div class="flex gap-24 w-[1340px] pb-32">
-          <div class="flex flex-col w-[380px] ml-4">
-            <h1 class="leading-10 font-copernicus font-black text-[40px] pb-10">OPCE & NHPP Integration</h1>
-            <p class="text-[15px] font-polaris font-medium">In 2023, Northwell’s Office of Patient & Customer Experience and Northwell Health Physician Partners Administration embarked on a strategic initiative to optimize operational efficiency and enhance the delivery of world-class service and patient-centered care. Key accomplishments encompassed centralizing survey administration and data reporting, bolstering support for regional Culture Leaders, introducing a comprehensive educational course tailored for ambulatory practice managers to proficiently utilize patient experience data, and deepening integration with recognition, physician services, education, and continuous improvement endeavors.</p>
-          </div>
-          <div class="flex flex-col">
-            <img src="assets/art/svenmark.png" class="w-[882px] h-[587px] flex-shrink-0"/>
-            <p class="text-black pt-3 font-polaris font-bold text-[12px] w-[800px]">Sven Gierlinger and Dr. Mark Talamini, executive leaders of the OPCE and NHPP Integration efforts.</p>
-            </div>
-          </div>
+<!-- Focus on Ambulatory section -->
+<section id="ambulatory" class="flex flex-col justify-center items-center bg-[#F2F4F7] py-16 md:py-24 lg:py-28 px-4 md:px-8 lg:px-16">
+  <h1 class="text-[36px] md:text-[48px] lg:text-[87px] font-polarisCondensed font-bold py-12 md:py-16 lg:py-24">Focus on Ambulatory</h1>
 
-        <div class="flex gap-16 w-[1340px] pb-32">
-          <div class="flex flex-col">
-            <img src="assets/art/AAA.jpeg" class="w-[781px] h-[610px] flex-shrink-0"/>
-            <p class="text-black pt-3 font-polaris font-bold text-[12px] w-[800px]">Practice leaders participate in the AAA program.</p>
-          </div>
+  <div class="flex flex-col lg:flex-row gap-12 w-full max-w-[1340px] pb-32">
+      <div class="flex flex-col w-full lg:w-[380px] ml-4">
+          <h1 class="leading-10 font-copernicus font-black text-[24px] md:text-[32px] lg:text-[40px] pb-4 md:pb-6 lg:pb-10">OPCE & NHPP Integration</h1>
+          <p class="text-[15px] font-polaris font-medium">In 2023, Northwell’s Office of Patient & Customer Experience and Northwell Health Physician Partners Administration embarked on a strategic initiative to optimize operational efficiency and enhance the delivery of world-class service and patient-centered care. Key accomplishments encompassed centralizing survey administration and data reporting, bolstering support for regional Culture Leaders, introducing a comprehensive educational course tailored for ambulatory practice managers to proficiently utilize patient experience data, and deepening integration with recognition, physician services, education, and continuous improvement endeavors.</p>
+      </div>
+      <div class="flex flex-col">
+          <img src="assets/art/svenmark.png" class="w-full lg:w-[882px] h-auto flex-shrink-0 rounded-lg shadow-lg" />
+          <p class="text-black pt-3 font-polaris font-bold text-[12px] w-full lg:w-[800px]">Sven Gierlinger and Dr. Mark Talamini, executive leaders of the OPCE and NHPP Integration efforts.</p>
+      </div>
+  </div>
 
-          <div class="flex flex-col w-[600px] ml-4">
-            <h1 class="leading-10 font-copernicus font-black text-[40px] pb-10">Ambulatory Administrative Academy</h1>
-            <p class="text-[15px] font-polaris font-medium pb-5">By bringing together cross functional teams from across the enterprise, the team developed the first ever in-person, structured training for ambulatory administrative team members – the Ambulatory Administrative Academy (AAA). Covering an enhanced Culture of C.A.R.E. with an emphasis on patient access and patient accommodation, the AAA aims to set behavioral and professional expectations by impressing Northwell values, empower new team members with baseline tools and education to be “ready to work”, and build a standard approach to key functions in ambulatory practices. </p>
-            <p class="text-[15px] font-polaris font-medium">The AAA launched in a phrased approach – first by engaging, celebrating, and empowering our Practice Leadership.  These in-person mandatory half-day sessions explore best practices that can address the evolving landscape of healthcare management and provide tools and strategies to support access and elevate patient care and experience.  Since the launch in February 2024, close to 500 practice leaders completed the workshop. The second phase of the AAA will focus on the newly hired ambulatory administrative team members.  During the two-week training, the AAA will cover enhanced Culture of C.A.R.E. with an emphasis on patient access and patient accommodation, hands-on scheduling technology training and best practices, telephony operations and etiquette, revenue cycle practices, digital front door tools, and become the future home to new digital technology training such as Salesforce. </p>
-          </div>
-        </div>
-    </section>
+  <div class="flex flex-col lg:flex-row gap-12 w-full max-w-[1340px] pb-32">
+      <div class="flex flex-col">
+          <img src="assets/art/AAA.jpeg" class="w-full lg:w-[781px] h-auto flex-shrink-0 rounded-lg shadow-lg" />
+          <p class="text-black pt-3 font-polaris font-bold text-[12px] w-full lg:w-[800px]">Practice leaders participate in the AAA program.</p>
+      </div>
+      <div class="flex flex-col w-full lg:w-[600px] ml-4">
+          <h1 class="leading-10 font-copernicus font-black text-[24px] md:text-[32px] lg:text-[40px] pb-4 md:pb-6 lg:pb-10">Ambulatory Administrative Academy</h1>
+          <p class="text-[15px] font-polaris font-medium pb-5">By bringing together cross-functional teams from across the enterprise, the team developed the first-ever in-person, structured training for ambulatory administrative team members – the Ambulatory Administrative Academy (AAA). Covering an enhanced Culture of C.A.R.E. with an emphasis on patient access and patient accommodation, the AAA aims to set behavioral and professional expectations by impressing Northwell values, empower new team members with baseline tools and education to be “ready to work”, and build a standard approach to key functions in ambulatory practices.</p>
+          <p class="text-[15px] font-polaris font-medium">The AAA launched in a phased approach – first by engaging, celebrating, and empowering our Practice Leadership. These in-person mandatory half-day sessions explore best practices that can address the evolving landscape of healthcare management and provide tools and strategies to support access and elevate patient care and experience. Since the launch in February 2024, close to 500 practice leaders completed the workshop. The second phase of the AAA will focus on the newly hired ambulatory administrative team members. During the two-week training, the AAA will cover enhanced Culture of C.A.R.E. with an emphasis on patient access and patient accommodation, hands-on scheduling technology training and best practices, telephony operations and etiquette, revenue cycle practices, digital front door tools, and become the future home to new digital technology training such as Salesforce.</p>
+      </div>
+  </div>
+</section>
 
-    <!--Voluteer Experience section -->
-    <section id="volunteer" class="flex flex-col justify-center items-center text-white bg-[#1A9AEA]">
-        <div class="w-[1340px]">
-            <h1 class="text-[87px] font-polarisCondensed font-bold text-center leading-tight py-20">Volunteer Experience</h1>
-        </div>
-        <div class="flex justify-between gap-24 w-[1300px] pb-32">
-          <div class="flex flex-col">
-            <img src="assets/art/dawg.png" class="w-[883px] h-[586px]"/>
-            <p class="text-white pt-3 font-polaris font-bold text-[12px] w-[800px]">Team members gather around Max, a friendly pet therapy volunteer at Phelps Hospital.</p>
-          </div>
-          <div class="flex flex-col w-[580px]">
-          <div class="w-96">
-                <h1 class="leading-10 font-copernicus font-black text-[40px] mb-2">Volunteer Experience</h1>
-                <h2 class="leading-8 mb-8 text-[27px] font-polaris font-medium">Designing the Future of Patient Experience</h2>
-            </div>
-            <p class="text-[15px] font-polaris font-medium mb-8">The Volunteer Experience at Northwell Health has seen significant growth in 2023. Focusing on volunteer recruitment, retention, and recognition, we have been able to increase the total number of Northwell Health volunteers by 780 volunteers since 2022, and an increase of the total number of volunteer hours by 69,933! In addition, we have been able to expand our volunteer programs to include new programs specifically impacting the patient experience. A major accomplishment that took place was the creation and use of a standardized volunteer data management system across the system. We look forward to continued growth and impact in 2024!
-            </p>
-            <a href="https://www.northwell.edu/about-northwell/volunteer" class="bg-[#BCDA86] flex flex-col justify-center items-center text-center text-[#0059A5] text-[20px] font-polarisCondensed font-bold p-5 h-[60px] w-[400px] rounded-2xl">SIGN UP TO VOLUNTEER</a>
-          </div>
-        </div>
-    </section>
 
-    <!--Additional Highlights section -->
-      <section id="highlights" class="flex flex-col justify-center items-center bg-white py-28">
-        <h1 class="text-[87px] font-polarisCondensed font-bold mb-32">Additional Highlights:</h1>
-
-        <div class="flex gap-24 w-[1340px] pb-32">
-          <img src="assets/art/epic.png" class="w-[734px] h-[486px] flex-shrink-0"/>
-
-          <div class="flex flex-col w-[545px] ml-4">
-            <h1 class="leading-10 text-[40px] font-copernicus font-black py-10">EPIC</h1>
-            <p class="text-[15px] font-polaris font-medium">Northwell is on its journey to becoming an EPIC organization. More than just an electronic medical record, we are using this momentous experience to redesign how care is delivered and received. A hallmark to our organization’s values, there are patients and family members as active members within the Workgroups focused on patient experience.</p>
+<!-- Volunteer Experience section -->
+<section id="volunteer" class="flex flex-col justify-center items-center text-white bg-[#1A9AEA] py-16 md:py-24 lg:py-28 px-4 md:px-8 lg:px-16">
+  <div class="w-full max-w-[1340px]">
+      <h1 class="text-[36px] md:text-[48px] lg:text-[87px] font-polarisCondensed font-bold text-center leading-tight py-12 md:py-16 lg:py-20">Volunteer Experience</h1>
+  </div>
+  <div class="flex flex-col lg:flex-row justify-between gap-12 lg:gap-24 w-full max-w-[1300px] pb-32">
+      <div class="flex flex-col w-full lg:w-[883px]">
+          <img src="assets/art/dawg.png" class="w-full h-auto rounded-lg shadow-lg" />
+          <p class="text-white pt-3 font-polaris font-bold text-[12px] w-full lg:w-[800px]">Team members gather around Max, a friendly pet therapy volunteer at Phelps Hospital.</p>
+      </div>
+      <div class="flex flex-col w-full lg:w-[580px]">
+          <div class="w-full max-w-[384px]">
+              <h1 class="leading-10 font-copernicus font-black text-[24px] md:text-[32px] lg:text-[40px] mb-2">Volunteer Experience</h1>
+              <h2 class="leading-8 mb-8 text-[18px] md:text-[22px] lg:text-[27px] font-polaris font-medium">Designing the Future of Patient Experience</h2>
           </div>
-        </div>
+          <p class="text-[15px] font-polaris font-medium mb-8">The Volunteer Experience at Northwell Health has seen significant growth in 2023. Focusing on volunteer recruitment, retention, and recognition, we have been able to increase the total number of Northwell Health volunteers by 780 volunteers since 2022, and an increase of the total number of volunteer hours by 69,933! In addition, we have been able to expand our volunteer programs to include new programs specifically impacting the patient experience. A major accomplishment that took place was the creation and use of a standardized volunteer data management system across the system. We look forward to continued growth and impact in 2024!</p>
+          <a href="https://www.northwell.edu/about-northwell/volunteer" class="bg-[#BCDA86] self-center flex justify-center items-center text-center text-[#0059A5] text-[16px] md:text-[18px] lg:text-[20px] font-polarisCondensed font-bold p-5 h-[60px] w-full max-w-[400px] rounded-2xl">SIGN UP TO VOLUNTEER</a>
+      </div>
+  </div>
+</section>
 
-        <div class="flex gap-24 w-[1340px] pb-32">
-          <div class="flex flex-col w-[545px] ml-4">
-            <h1 class="leading-10 text-[40px] text-center font-copernicus font-black py-10">PX Week</h1>
-            <p class="text-[15px] py-16 font-polaris font-medium">From April 24th – 28th, celebrations took place across the organization as our 83,000 employees celebrated national Patient Experience Week! Teams held special events at their sites, focusing on gratitude, employee appreciation, wellness and self-care activities, and educational forums. An exciting highlight was when OPCE leadership visited the sites, units, and ambulatory practices to present them with North Star 90 and Rising Star awards! These esteemed awards are given to those sites who go above and beyond in patient experience during the year.</p>
-            <a href="https://www.northwell.edu/about/commitment-to-excellence/patient-and-customer-experience" class="bg-[#0059A5] flex flex-col justify-center items-center text-center text-white text-[20px] font-polarisCondensed font-bold p-5 h-[60px] w-[400px] rounded-2xl">CHECK THEM OUT BY CLICKING HERE</a>
-          </div>
-          <div class="flex flex-col">
-            <img src="assets/art/PXweek.png" class="w-[882px] h-[587px] flex-shrink-0"/>
-            <p class="text-black pt-3 font-polaris font-bold text-[12px] w-[800px]">Sven Gierlinger and Aggie Barden join the team at CCMC to celebrate PX Week</p>
-          </div>
-        </div>
+<!-- Additional Highlights section -->
+<section id="highlights" class="flex flex-col justify-center items-center bg-white py-16 md:py-24 lg:py-28 px-4 md:px-8 lg:px-16">
+  <h1 class="text-[36px] md:text-[48px] lg:text-[87px] font-polarisCondensed font-bold mb-12 md:mb-16 lg:mb-32">Additional Highlights:</h1>
 
-        <div class="flex gap-24 w-[1340px] pb-32">
-          <div class="flex flex-col">
-            <img src="assets/art/guests.png" class="w-[882px] h-[587px] flex-shrink-0"/>
-            <p class="text-black pt-3 font-polaris font-bold text-[12px] w-[800px]">Members of the OPCE team join members of SingHealth at Northwell’s corporate office</p>
-          </div>
-          <div class="flex flex-col w-[380px] ml-4">
-            <h1 class="leading-10 text-center font-copernicus font-black text-[40px] pb-16">International Guests</h1>
-            <p class="text-[15px] font-polaris font-medium">In 2023, OPCE welcomed and hosted healthcare leaders and clinicians from France and Singapore. These collaborative opportunities symbolize the incredible impact on global connection as we advance the care experience for all communities.</p>
-          </div>
-        </div>
-      </section>
-    
-        
-    <!-- Looking Ahead section -->
-    <section id="looking" class="flex flex-col justify-center items-center bg-center bg-[url('../assets/art/sunset.png')] bg-[#fff]">
-        <div class="w-[861px] font-bold text-center text-black text-[35px] py-16">
-            <div class="flex flex-col justify-center items-center rounded-2xl">
-                <h2 class="font-polarisCondensed text-[87px] font-bold">Looking Ahead</h2>
-                <p class="font-polaris font-medium w-[1000px] text-[23px] pt-5 pb-24">At Northwell Health, we are visioning forward, designing, and delivering a better tomorrow – one that continues to place the patient at the forefront, honors the pivotal role of family caregivers, where the little things are the big things, tapping into our innovative spirit and maximining technology to elevate human connections. We remain committed to listening to the “voice” of patients and consumers in an effort to reduce consumer effort and create human-centered excellence. Every person, every role, every moment matters.</p>
-            </div>
-        </div>                   
-    </section>
+  <div class="flex flex-col lg:flex-row gap-12 w-full max-w-[1340px] pb-32">
+      <img src="assets/art/epic.png" class="w-full lg:w-[734px] h-auto flex-shrink-0" />
+      <div class="flex flex-col w-full lg:w-[545px] ml-0 lg:ml-4">
+          <h1 class="leading-10 text-[24px] md:text-[32px] self-center lg:self-start lg:text-[40px] font-copernicus font-black py-4 md:py-6 lg:py-10">EPIC</h1>
+          <p class="text-[15px] font-polaris font-medium">Northwell is on its journey to becoming an EPIC organization. More than just an electronic medical record, we are using this momentous experience to redesign how care is delivered and received. A hallmark to our organization’s values, there are patients and family members as active members within the Workgroups focused on patient experience.</p>
+      </div>
+  </div>
 
-    <!-- Awards section -->
-    <section id="awards" class="flex flex-col justify-center items-center bg-center bg-[#0059A5]">
-        <div class="w-[861px] font-bold text-center text-white text-[35px] py-16">
-            <div class="flex flex-col justify-center items-center rounded-2xl">
-                <h2 class="font-polarisCondensed text-[87px] font-bold">Awards</h2>
-                <p class="font-polaris font-medium text-[26px] w-[1000px] pt-5 pb-24">In 2023, sites, service lines, hospital units, medical practices and ambulatory service locations achieving the 90th percentile nationally in patient experience were presented the North Star 90 award, our highest honor. The Rising Star Award recognizes top improvers from 2022 to 2023.</p>
-                <a href="awards.html" class="bg-[#BCDA86] flex flex-col justify-center items-center text-center text-black text-[20px] font-polarisCondensed font-bold h-[60px] w-[400px] rounded-2xl">SEE ALL THE AWARDS</a>
-            </div>
-        </div>                   
-    </section>                   
+  <div class="flex flex-col align-center justify-center lg:flex-row gap-12 w-full max-w-[1340px] pb-32">
+      <div class="flex flex-col w-full lg:w-[545px] ml-0 lg:ml-4">
+          <h1 class="leading-10 text-[24px] md:text-[32px] lg:text-[40px] text-center font-copernicus font-black py-4 md:py-6 lg:py-10">PX Week</h1>
+          <p class="text-[15px] py-4 md:py-8 lg:py-16 font-polaris font-medium">From April 24th – 28th, celebrations took place across the organization as our 83,000 employees celebrated national Patient Experience Week! Teams held special events at their sites, focusing on gratitude, employee appreciation, wellness and self-care activities, and educational forums. An exciting highlight was when OPCE leadership visited the sites, units, and ambulatory practices to present them with North Star 90 and Rising Star awards! These esteemed awards are given to those sites who go above and beyond in patient experience during the year.</p>
+          <a href="https://www.northwell.edu/about/commitment-to-excellence/patient-and-customer-experience" class="bg-[#0059A5] flex justify-center items-center text-center text-white text-[16px] self-center md:text-[18px] lg:text-[20px] font-polarisCondensed font-bold p-5 h-[60px] w-full max-w-[400px] rounded-2xl">CHECK THEM OUT BY CLICKING HERE</a>
+      </div>
+      <div class="flex flex-col justify-center align-center w-full lg:w-[800px] h-auto">
+          <img src="assets/art/PXweek.png" class="w-full h-auto rounded-lg shadow-lg" />
+          <p class="text-black pt-3 font-polaris font-bold text-[12px] w-full lg:w-[800px]">Sven Gierlinger and Aggie Barden join the team at CCMC to celebrate PX Week</p>
+      </div>
+  </div>
+
+  <div class="flex flex-col lg:flex-row gap-12 w-full max-w-[1340px] pb-32">
+      <div class="flex flex-col">
+          <img src="assets/art/guests.png" class="w-full lg:w-[882px] h-auto rounded-lg shadow-lg" />
+          <p class="text-black pt-3 font-polaris font-bold text-[12px] w-full lg:w-[800px]">Members of the OPCE team join members of SingHealth at Northwell’s corporate office</p>
+      </div>
+      <div class="flex flex-col w-full lg:w-[380px] ml-0 lg:ml-4">
+          <h1 class="leading-10 text-center font-copernicus font-black text-[24px] md:text-[32px] lg:text-[40px] pb-4 md:pb-6 lg:pb-16">International Guests</h1>
+          <p class="text-[15px] font-polaris font-medium">In 2023, OPCE welcomed and hosted healthcare leaders and clinicians from France and Singapore. These collaborative opportunities symbolize the incredible impact on global connection as we advance the care experience for all communities.</p>
+      </div>
+  </div>
+</section>
+
+<!-- Looking Ahead section -->
+<section id="looking" class="flex flex-col max-h-[600px] justify-center items-center bg-center bg-[url('../assets/art/sunset.png')] bg-[#fff] py-16 md:py-24 lg:py-28 px-4 md:px-8 lg:px-16">
+  <div class="w-full max-w-[861px] font-bold text-center text-black text-[24px] md:text-[30px] lg:text-[35px]">
+      <div class="flex flex-col justify-center items-center rounded-2xl">
+          <h2 class="font-polarisCondensed text-[48px] md:text-[64px] lg:text-[87px] font-bold">Looking Ahead</h2>
+          <p class="font-polaris font-medium w-full max-w-[1000px] text-[18px] md:text-[20px] lg:text-[23px] pt-5 pb-12 md:pb-16 lg:pb-24">At Northwell Health, we are visioning forward, designing, and delivering a better tomorrow – one that continues to place the patient at the forefront, honors the pivotal role of family caregivers, where the little things are the big things, tapping into our innovative spirit and maximizing technology to elevate human connections. We remain committed to listening to the “voice” of patients and consumers in an effort to reduce consumer effort and create human-centered excellence. Every person, every role, every moment matters.</p>
+      </div>
+  </div>                   
+</section>
+
+<!-- Awards section -->
+<section id="awards" class="flex flex-col justify-center items-center bg-center bg-[#0059A5] py-16 md:py-24 lg:py-28 px-4 md:px-8 lg:px-16">
+  <div class="w-full max-w-[861px] font-bold text-center text-white text-[24px] md:text-[30px] lg:text-[35px]">
+      <div class="flex flex-col justify-center items-center rounded-2xl">
+          <h2 class="font-polarisCondensed text-[48px] md:text-[64px] lg:text-[87px] font-bold">Awards</h2>
+          <p class="font-polaris font-medium text-[18px] md:text-[22px] lg:text-[26px] w-full max-w-[1000px] pt-5 pb-12 md:pb-16 lg:pb-24">In 2023, sites, service lines, hospital units, medical practices and ambulatory service locations achieving the 90th percentile nationally in patient experience were presented the North Star 90 award, our highest honor. The Rising Star Award recognizes top improvers from 2022 to 2023.</p>
+          <a href="awards.html" class="bg-[#BCDA86] flex justify-center items-center text-center text-black text-[16px] md:text-[18px] lg:text-[20px] font-polarisCondensed font-bold h-[60px] w-full max-w-[400px] rounded-2xl">SEE ALL THE AWARDS</a>
+      </div>
+  </div>                   
+</section>
+          
 
     <footer class="bg-[#232424] text-white p-10">
         <div class="max-full h-96">
@@ -506,7 +509,7 @@ video.muted = true;
 video.style.width = '100%';
 video.style.height = '100%';
 video.style.objectFit = 'cover'; // Ensures the video covers the entire div
-video.style.filter = 'blur(7px) brightness(50%)'; // Apply the blur and brightness filter
+video.style.filter = 'brightness(50%)'; // Apply the blur and brightness filter
 video.style.zIndex = '1';
 
 
@@ -518,12 +521,32 @@ container.appendChild(video);
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            slidesPerView: 3,
             centeredSlides: true,
-            spaceBetween: 50,
             speed: 700,
             loop: true,
             crossFade: true,
+            breakpoints: {
+              400: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+              640: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+              },
+              768: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+              },
+              840: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+              },
+              1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+              },
+          },
             autoplay: {
               delay: 5000,
               disableOnInteraction: true,
