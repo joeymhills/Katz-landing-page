@@ -3,6 +3,9 @@ module.exports = {
   content: ["./docs/**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        'lg': '1250px',
+      },
       fontFamily: {
         copernicus: ['GalaxieCopernicus', 'sans-serif'],
         polaris: ['GalaxiePolaris', 'sans-serif'],
