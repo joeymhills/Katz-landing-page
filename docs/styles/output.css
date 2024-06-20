@@ -1809,6 +1809,11 @@ video {
     padding-bottom: 2rem;
   }
 
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .md\:pb-16 {
     padding-bottom: 4rem;
   }
